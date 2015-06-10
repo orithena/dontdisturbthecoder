@@ -12,6 +12,6 @@ Wechsel den Branch, um alternative Versionen zu erhalten:
 
 Aber TeX ist ja dazu da, angepasst zu werden:
 
-  git clone https://github.com/orithena/dontdisturbthecoder.git
+    git clone https://github.com/orithena/dontdisturbthecoder.git
 
-
+Ich akzeptiere auch pull-Requests für weitere Branches :)
