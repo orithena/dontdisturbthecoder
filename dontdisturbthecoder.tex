@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper,landscape,notitlepage,twocolumn]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex,top=35mm,left=30mm,right=30mm,bottom=20mm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+%\usepackage{layout}
+\parskip0.5cm
+\parindent0pt
+\columnsep12mm
+
+\newcommand*{\AbsLine}[2]{%
+    \begin{tikzpicture}[remember picture, overlay, thick]
+        \draw [draw=lightgray] ($(current page.south west) + (#1)$) -- ($(current page.south west) + (#2)$);
+    \end{tikzpicture}
+}
+
+\renewcommand\familydefault{\sfdefault}%
+\begin{document}
+\pagestyle{empty}
+\AbsLine{14.85cm,21cm}{14.85cm,0cm}
+\AbsLine{2.5cm,0cm}{2.5cm,21cm}
+\AbsLine{27.2cm,0cm}{27.2cm,21cm}
+\AbsLine{0cm,2.5cm}{29.7cm,2.5cm}
+\AbsLine{0cm,18.5cm}{29.7cm,18.5cm}
+\AbsLine{14.85cm,18.5cm}{29.7cm,20.3cm}
+\AbsLine{14.85cm,18.5cm}{0cm,20.3cm}
+\AbsLine{14.85cm,2.5cm}{29.7cm,0.7cm}
+\AbsLine{14.85cm,2.5cm}{0cm,0.7cm}
+
+\AbsLine{2.5cm,18.5cm}{0.8cm,20.2cm}
+\AbsLine{2cm,21cm}{0.8cm,20.2cm}
+\AbsLine{2.5cm,2.5cm}{0.8cm,0.8cm}
+\AbsLine{2cm,0cm}{0.8cm,0.8cm}
+
+\AbsLine{27.2cm,18.5cm}{28.9cm,20.2cm}
+\AbsLine{27.7cm,21cm}{28.9cm,20.2cm}
+\AbsLine{27.2cm,2.5cm}{28.9cm,0.8cm}
+\AbsLine{27.7cm,0cm}{28.9cm,0.8cm}
+
+%\AbsLine{cm,cm}{cm,cm}
+%\AbsLine{cm,cm}{cm,cm}
+%\AbsLine{cm,cm}{cm,cm}
+
+% fuer den Fall ``Klebeflaeche links'' einfach die naechste Zeile auskommentieren
+~\newpage
+
+\begin{LARGE}
+\textbf{Achtung!}
+
+\textbf{Tief denkender Entwickler!}
+\end{LARGE}
+
+\begin{Large}Wenn dieser Entwickler kaum reagiert, einen geistesabwesenden
+Gesichtsausdruck und Kopfhörer auf den Ohren hat, jongliert er 
+mit Algorithmen und Datenstrukturen im Kopf.
+
+Die kleinste Unterbrechung erfordert danach min. 15 Minuten, um den 
+gleichen Denkstand wieder zu erreichen!
+
+Um dies zu vermeiden:
+\end{Large}
+
+\begin{LARGE}
+\textbf{Bitte nicht ansprechen,\\
+wenn es nicht wirklich wichtig ist!}
+\end{LARGE}
+
+\begin{Large}Mails und InstantMessages sind OK, werden aber mit zeitlicher 
+Verzögerung bearbeitet.\end{Large}
+\end{document}
